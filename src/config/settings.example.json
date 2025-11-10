@@ -1,0 +1,29 @@
+{
+  "request": {
+    "url": "https://jsonplaceholder.typicode.com/posts",
+    "method": "GET",
+    "headers": {
+      "Accept": "application/json"
+    },
+    "payload": null
+  },
+  "pagination": {
+    "enabled": false,
+    "param": "page",
+    "start": 1,
+    "maxPages": 5,
+    "stopWhenEmpty": true
+  },
+  "responsePath": null,
+  "mapping": [
+    { "from": "id", "to": "id" },
+    { "from": "userId", "to": "user_id" },
+    { "from": "title", "to": "title" },
+    { "from": "body", "to": "body" }
+  ],
+  "filters": [],
+  "output": {
+    "format": "csv",
+    "filePath": "data/sample_output.csv"
+  }
+}
