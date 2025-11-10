@@ -1,0 +1,21 @@
+[
+  {
+    "url": "https://api.example.com/data",
+    "method": "POST",
+    "payload": "{\"query\":\"search-term\"}",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "data": {
+      "results": [
+        { "id": 1, "name": "Item A", "price": 10.5 },
+        { "id": 2, "name": "Item B", "price": 20.0 },
+        { "id": 3, "name": "Item C", "price": 7.25 }
+      ],
+      "meta": {
+        "page": 1,
+        "total": 3
+      }
+    }
+  }
+]
